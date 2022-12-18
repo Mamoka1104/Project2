@@ -1,0 +1,300 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+
+.header {
+    background: #222222;
+    height: 74px;
+    padding: 18px 32px;
+    box-sizing: border-box;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 1600px) {
+    .container {
+        margin: 0 auto;
+        width: 1140px;
+    }
+}
+
+.loupe_icon {
+    margin-left: 41px;
+}
+
+.man_icon {
+    margin-left: 25px;
+    margin-right: 42px;
+}
+
+.top_brand {
+    background: #F1E4E6;
+}
+
+.top_brand .container {
+    min-height: 367px;
+    display: flex;
+}
+
+.top_brand .container>div {
+    width: 50%;
+}
+
+.top_brandLeft img {
+    display: block;
+    width: 100%;
+}
+
+.top_brandRight {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222222;
+}
+
+@media (min-width: 1600px) {
+    .top_brandRight {
+        justify-content: flex-start;
+    }
+}
+
+.brandPromo {
+    border-left: 12px solid #F16D7F;
+    padding-left: 16px;
+}
+
+@media (min-width: 1600px) {
+    .brandPromo {
+        margin-left: 63px;
+    }
+}
+
+.brandPromo div:first-child {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 53px;
+}
+
+.brandPromo div:last-child {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.brandPromo span {
+    color: #F16D7F;
+}
+
+.offer {
+    padding: 65px 16px 110px 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 167px 116px;
+    gap: 20px;
+}
+
+@media (min-width: 1600px) {
+    .offer {
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: 260px 180px;
+        gap: 30px;
+    }
+}
+
+.offer>div {
+    position: relative;
+}
+
+.offer img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.offer_accesories {
+    grid-column: 1/-1;
+}
+
+.offerImgThree {
+    height: 167px;
+}
+
+@media (min-width: 1600px) {
+    .offerImgThree {
+        height: 260px;
+    }
+}
+
+.offerImgLast {
+    height: 116px;
+}
+
+@media (min-width: 1600px) {
+    .offerImgLast {
+        height: 180px;
+    }
+}
+
+.offerTitle {
+    position: relative;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.offerTitleTop {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.offerTitleBottom {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.fetured h2 {
+    margin: 0;
+    margin-bottom: 6px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+}
+
+.feturedTxt {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    margin-bottom: 73px;
+}
+
+.feturedItems {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 16px;
+    column-gap: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.feturedItems img {
+    width: 100%;
+    display: block;
+}
+
+.feturedImgWrap {
+    position: relative;
+}
+
+.feturedItem:hover .fetureImgDark {
+    display: flex;
+}
+
+.fetureImgDark {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(58, 56, 56, 0.86);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.fetureImgDark button {
+    background: none;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    padding: 10px 13px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.fetureImgDark button img {
+    width: 26px;
+    height: 24px;
+    margin-right: 11px;
+}
+
+.feturedItem {
+    background: #F8F8F8;
+}
+
+.feturedTitlePrise {
+    margin: 24px 29px 20px 16px;
+}
+
+.feturedName {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.feturedText {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-top: 13px;
+    margin-bottom: 18px;
+}
+
+.feturedPrise {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+@media (min-width: 1600px) {
+    .feturedItems {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+        row-gap: 25px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.feturedBrowseBtn {
+    border: 1px solid #FF6A6A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    background: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 33px;
+    margin-bottom: 71px;
+    padding: 14px 39px;
+    font-family: inherit;
+}
+
+.feturedBrowseBtn:hover {
+    background: #F26376;
+    color: #FFFFFF;
+}
