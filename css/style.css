@@ -51,7 +51,7 @@ body {
     width: 100%;
 }
 
-.top_brandRight {
+.top_brand_right {
     min-height: inherit;
     display: flex;
     justify-content: center;
@@ -60,35 +60,35 @@ body {
 }
 
 @media (min-width: 1025px) {
-    .top_brandRight {
+    .top_brand_right {
         justify-content: flex-start;
     }
 }
 
-.brandPromo {
+.brand_promo {
     border-left: 12px solid #F16D7F;
     padding-left: 16px;
 }
 
 @media (min-width: 1025px) {
-    .brandPromo {
+    .brand_promo {
         margin-left: 63px;
     }
 }
 
-.brandPromo div:first-child {
+.brand_promo div:first-child {
     font-weight: 900;
     font-size: 44px;
     line-height: 53px;
 }
 
-.brandPromo div:last-child {
+.brand_promo div:last-child {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
 }
 
-.brandPromo span {
+.brand_promo span {
     color: #F16D7F;
 }
 
@@ -122,27 +122,27 @@ body {
     grid-column: 1/-1;
 }
 
-.offerImgThree {
+.offer_img_three {
     height: 167px;
 }
 
 @media (min-width: 1025px) {
-    .offerImgThree {
+    .offer_img_three {
         height: 260px;
     }
 }
 
-.offerImgLast {
+.offer_img_last {
     height: 116px;
 }
 
 @media (min-width: 1025px) {
-    .offerImgLast {
+    .offer_img_last {
         height: 180px;
     }
 }
 
-.offerTitle {
+.offer_title {
     position: relative;
     color: #FFFFFF;
     width: 100%;
@@ -153,13 +153,13 @@ body {
     flex-direction: column;
 }
 
-.offerTitleTop {
+.offer_title_top {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
 }
 
-.offerTitleBottom {
+.offer_title_bottom {
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -176,7 +176,7 @@ body {
     color: #222222;
 }
 
-.feturedTxt {
+.fetured_subtitle {
     text-align: center;
     font-weight: 400;
     font-size: 14px;
@@ -185,7 +185,7 @@ body {
     margin-bottom: 73px;
 }
 
-.feturedItems {
+.fetured_items {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 16px;
@@ -194,20 +194,20 @@ body {
     padding-right: 16px;
 }
 
-.feturedItems img {
+.fetured_items img {
     width: 100%;
     display: block;
 }
 
-.feturedImgWrap {
+.item_img_wrap {
     position: relative;
 }
 
-.feturedItem:hover .fetureImgDark {
+.fetured_item:hover .item_img_dark {
     display: flex;
 }
 
-.fetureImgDark {
+.item_img_dark {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -219,7 +219,7 @@ body {
     align-items: center;
 }
 
-.fetureImgDark button {
+.item_img_dark button {
     background: none;
     border: 1px solid #FFFFFF;
     color: #FFFFFF;
@@ -231,28 +231,28 @@ body {
     font-family: inherit;
 }
 
-.fetureImgDark button img {
+.item_img_dark button img {
     width: 26px;
     height: 24px;
     margin-right: 11px;
 }
 
-.feturedItem {
+.fetured_item {
     background: #F8F8F8;
 }
 
-.feturedTitlePrise {
+.item_title_prise {
     margin: 24px 29px 20px 16px;
 }
 
-.feturedName {
+.title_prise_name {
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
     color: #000000;
 }
 
-.feturedText {
+.title_prise_text {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
@@ -261,7 +261,7 @@ body {
     margin-bottom: 18px;
 }
 
-.feturedPrise {
+.title_prise_prise {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -269,7 +269,7 @@ body {
 }
 
 @media (min-width: 1025px) {
-    .feturedItems {
+    .fetured_items {
         grid-template-columns: repeat(3, 1fr);
         column-gap: 30px;
         row-gap: 25px;
@@ -278,7 +278,7 @@ body {
     }
 }
 
-.feturedBrowseBtn {
+.fetured_browse_btn {
     border: 1px solid #FF6A6A;
     font-weight: 400;
     font-size: 16px;
@@ -294,7 +294,7 @@ body {
     font-family: inherit;
 }
 
-.feturedBrowseBtn:hover {
+.fetured_browse_btn:hover {
     background: #F26376;
     color: #FFFFFF;
 }
