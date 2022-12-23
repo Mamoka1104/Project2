@@ -7,7 +7,7 @@ body {
 .header {
     background: #222222;
     height: 74px;
-    padding: 18px 32px;
+    padding: 18px 16px;
     box-sizing: border-box;
 }
 
@@ -17,75 +17,52 @@ body {
     align-items: center;
 }
 
-@media (min-width: 1025px) {
-    .container {
-        margin: 0 auto;
-        width: 1140px;
-    }
+.user_icon,
+.cart_icon {
+    display: none;
 }
 
-.loupe_icon {
+.search_icon {
     margin-left: 41px;
 }
 
-.man_icon {
+.user_icon {
     margin-left: 25px;
     margin-right: 42px;
 }
 
 .top_brand {
     background: #F1E4E6;
+    min-height: 363px;
 }
 
-.top_brand .container {
-    min-height: 367px;
-    display: flex;
-}
-
-.top_brand .container>div {
-    width: 50%;
-}
-
-.top_brandLeft img {
-    display: block;
-    width: 100%;
+.top_brand_left {
+    display: none;
 }
 
 .top_brand_right {
-    min-height: inherit;
+    min-height: 363px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #222222;
-}
-
-@media (min-width: 1025px) {
-    .top_brand_right {
-        justify-content: flex-start;
-    }
 }
 
 .brand_promo {
+    color: #222222;
     border-left: 12px solid #F16D7F;
-    padding-left: 16px;
+    padding-left: 15px;
 }
 
-@media (min-width: 1025px) {
-    .brand_promo {
-        margin-left: 63px;
-    }
-}
-
-.brand_promo div:first-child {
+.brand_promo :first-child {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 53px;
+    font-size: 38px;
+    line-height: 46px;
 }
 
-.brand_promo div:last-child {
+.brand_promo :last-child {
     font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 20px;
+    line-height: 24px;
 }
 
 .brand_promo span {
@@ -93,19 +70,11 @@ body {
 }
 
 .offer {
-    padding: 65px 16px 110px 16px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 167px 116px;
-    gap: 20px;
-}
-
-@media (min-width: 1025px) {
-    .offer {
-        grid-template-columns: repeat(3, 360px);
-        grid-template-rows: 260px 180px;
-        gap: 30px;
-    }
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 248px)111px;
+    gap: 32px;
+    padding: 64px 16px;
 }
 
 .offer>div {
@@ -114,43 +83,23 @@ body {
 
 .offer img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
     position: absolute;
-}
-
-.offer_accesories {
-    grid-column: 1/-1;
-}
-
-.offer_img_three {
-    height: 167px;
-}
-
-@media (min-width: 1025px) {
-    .offer_img_three {
-        height: 260px;
-    }
-}
-
-.offer_img_last {
-    height: 116px;
-}
-
-@media (min-width: 1025px) {
-    .offer_img_last {
-        height: 180px;
-    }
+    top: 0;
+    left: 0;
 }
 
 .offer_title {
     position: relative;
-    color: #FFFFFF;
+    z-index: 1;
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    color: #FFFFFF;
 }
 
 .offer_title_top {
@@ -166,9 +115,14 @@ body {
     color: #F16D7F;
 }
 
+.fetured {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
 .fetured h2 {
-    margin: 0;
-    margin-bottom: 6px;
+    margin-top: 0;
+    margin-bottom: 3px;
     text-align: center;
     font-weight: 400;
     font-size: 30px;
@@ -182,21 +136,22 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #9F9F9F;
-    margin-bottom: 73px;
+    margin-bottom: 65px;
 }
 
 .fetured_items {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 16px;
-    column-gap: 18px;
-    padding-left: 16px;
-    padding-right: 16px;
+    grid-template-columns: 1fr;
+    gap: 16px;
 }
 
-.fetured_items img {
-    width: 100%;
+.fetured_item {
+    background: #F8F8F8;
+}
+
+.fetured_item img {
     display: block;
+    width: 100%;
 }
 
 .item_img_wrap {
@@ -237,12 +192,8 @@ body {
     margin-right: 11px;
 }
 
-.fetured_item {
-    background: #F8F8F8;
-}
-
 .item_title_prise {
-    margin: 24px 29px 20px 16px;
+    margin: 25px 29px 20px 16px;
 }
 
 .title_prise_name {
@@ -250,6 +201,7 @@ body {
     font-size: 13px;
     line-height: 16px;
     color: #000000;
+
 }
 
 .title_prise_text {
@@ -266,16 +218,6 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
-}
-
-@media (min-width: 1025px) {
-    .fetured_items {
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 30px;
-        row-gap: 25px;
-        padding-left: 0;
-        padding-right: 0;
-    }
 }
 
 .fetured_browse_btn {
@@ -297,4 +239,115 @@ body {
 .fetured_browse_btn:hover {
     background: #F26376;
     color: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 18px 32px;
+    }
+
+    .user_icon,
+    .cart_icon {
+        display: inline;
+    }
+
+    .top_brand .container {
+        display: flex;
+    }
+
+    .top_brand .container>div {
+        width: 50%;
+    }
+
+    .top_brand_left {
+        display: block;
+    }
+
+    .top_brand_left img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .top_brand_right {
+        min-height: 368px;
+        justify-content: flex-start;
+    }
+
+    .brand_promo {
+        margin-left: 39px;
+    }
+
+    .brand_promo :first-child {
+        font-size: 44px;
+        line-height: 53px;
+    }
+
+    .brand_promo :last-child {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .offer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 168px 116px;
+        gap: 19px;
+        padding: 65px 16px 110px 16px;
+    }
+
+    .offer_accesories {
+        grid-column: 1/-1;
+    }
+
+    .fetured {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .fetured_items {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        margin: 0 auto;
+        width: 1140px;
+    }
+
+    .top_brand_right {
+        min-height: 764px;
+    }
+
+    .brand_promo {
+        margin-left: 63px;
+    }
+
+    .brand_promo :first-child {
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    .brand_promo :last-child {
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .offer {
+
+        grid-template-rows: 260px 180px;
+        gap: 30px;
+        padding: 65px 0 96px 0px;
+    }
+
+    .fetured {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .fetured_items {
+        grid-template-columns: repeat(3, 3fr);
+        gap: 30px;
+    }
 }
