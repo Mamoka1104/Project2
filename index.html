@@ -107,8 +107,8 @@
                         <p class="title_prise_prise">$52.00</p>
                     </div>
                 </article>
-                <article class="fetured_item">
-                    <div class="item_img_wrap"><img src="img/feturedItemphoto2.jpg" alt="photo2">
+                <!---<article class="fetured_item">
+                       <div class="item_img_wrap"><img src="img/feturedItemphoto2.jpg" alt="photo2">
                         <div class="item_img_dark">
                             <button class="item_img_dark_btn txt" type="button">
                                 <svg width="27" height="25" viewBox="0 0 27 25" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +201,7 @@
                             Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
                         <p class="title_prise_prise">$52.00</p>
                     </div>
-                </article>
+                </article> -->
             </div>
             <button class="fetured_browse_btn">Browse All Product</button>
         </section>
@@ -281,7 +281,48 @@
         </div>
 
     </footer>
+    <script src="fetured_item.js"></script>
+    <script>
+        const dataEl = document.querySelector('.fetured_items');
+        const data = JSON.parse(dataFI)
+        console.log(data);
 
+        data.forEach(element => {
+            const articleEl = document.createElement('div');
+            articleEl.classList.add('fetured_item');
+            dataEl.appendChild(articleEl);
+
+            const divEl = document.createElement('div');
+            divEl.classList.add('item_img_wrap');
+            articleEl.appendChild(divEl);
+
+            const imgEl = document.createElement('img');
+            imgEl.src = element.photo;
+            imgEl.alt = element.alt;
+            divEl.appendChild(imgEl);
+
+            const divElTxt = document.createElement('div');
+            divElTxt.classList.add('item_title_prise');
+            articleEl.appendChild(divElTxt);
+
+            const title = document.createElement('h4');
+            title.classList.add('title_prise_name');
+            title.textContent = element.name;
+            divElTxt.appendChild(title);
+
+            const titleTxt = document.createElement('p');
+            titleTxt.classList.add('title_prise_text');
+            titleTxt.textContent = element.text;
+            divElTxt.appendChild(titleTxt);
+
+            const titlePrise = document.createElement('p');
+            titlePrise.classList.add('title_prise_prise');
+            titlePrise.textContent = `$ ${element.prise}`;
+            divElTxt.appendChild(titlePrise);
+
+
+        });
+    </script>
 </body>
 
 </html>
