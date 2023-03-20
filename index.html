@@ -50,6 +50,41 @@
                 </div>
             </div>
         </div>
+        <div class="menu hidden">
+            <h4 class="title_menu">menu</h4>
+            <ul class="menu_unit">
+                <li>
+                    <h5 class="subtitle_menu">man</h5>
+                    <ul class="menu_unit_items">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h5 class="subtitle_menu">woman</h5>
+                    <ul class="menu_unit_items">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Polos</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h5 class="subtitle_menu">kids</h5>
+                    <ul class="menu_unit_items">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Jackets & Coats</a></li>
+                        <li><a href="#">Polos</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Bags</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <main>
@@ -107,8 +142,8 @@
                         <p class="title_prise_prise">$52.00</p>
                     </div>
                 </article>
-                <!---<article class="fetured_item">
-                       <div class="item_img_wrap"><img src="img/feturedItemphoto2.jpg" alt="photo2">
+                <article class="fetured_item">
+                    <div class="item_img_wrap"><img src="img/feturedItemphoto2.jpg" alt="photo2">
                         <div class="item_img_dark">
                             <button class="item_img_dark_btn txt" type="button">
                                 <svg width="27" height="25" viewBox="0 0 27 25" xmlns="http://www.w3.org/2000/svg">
@@ -201,7 +236,7 @@
                             Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
                         <p class="title_prise_prise">$52.00</p>
                     </div>
-                </article> -->
+                </article>
             </div>
             <button class="fetured_browse_btn">Browse All Product</button>
         </section>
@@ -282,7 +317,18 @@
 
     </footer>
     <script src="fetured_item.js"></script>
+
     <script>
+        'use strict';
+        let menu = document.querySelector('.menu');
+        let barsIcon = document.querySelector('.bars_icon');
+        barsIcon.addEventListener('click', function () {
+            menu.classList.toggle('hidden');
+        });
+
+    </script>
+
+    <!--<script>
         const dataEl = document.querySelector('.fetured_items');
         const data = JSON.parse(dataFI)
         console.log(data);
@@ -322,7 +368,7 @@
 
 
         });
-    </script>
+    </script>-->
 </body>
 
 </html>
